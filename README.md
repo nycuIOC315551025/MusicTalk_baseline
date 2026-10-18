@@ -10,6 +10,18 @@ The local upstream snapshots are pinned in [`vendor/README.md`](vendor/README.md
 
 The paper combines a ViT with brightness-characteristic patchout (BCP-WP), CNN detectors, and a multi-dataset audio shaper. It reports OpenMIC-2018 experiments and additional strong-label evaluations using MedleyDB, URMP, and INSTDB. The first pass is deliberately smaller: establish an OpenMIC data loader and one bounded training run, not all detector/data-source combinations or repeated seeds.
 
+## Comparison with Table 1 of the paper
+
+Our OpenMIC run reproduces the paper's model direction and gets an almost identical **mAP** to the MusicTalk/OpenMIC result listed in Table 1. The comparison is not equally close for every metric:
+
+| Metric | Paper, MusicTalk / OpenMIC (Table 1) | Our best validation checkpoint | Difference |
+|---|---:|---:|---:|
+| mAP | 0.867 | 0.86721 | +0.00021 |
+| Macro ROC-AUC | 0.973 | 0.92300 | -0.05000 |
+| Macro F1 | 0.842 | 0.83007 | -0.01193 |
+
+The reproduction uses the OpenMIC-2018 20-class task and the paper-guided PaSST/BCP-WP + ResNet38 ensemble. The checkpoint shown here is selected on validation; its metrics are validation metrics, and this branch did **not** evaluate the official test split. The paper's Table 1 lists the MusicTalk/OpenMIC scores as mAP 0.867, AUC 0.973, and macro-F1 0.842, but the article also describes Table 1 as a related-work summary while Section VI points its OpenMIC evaluation to Table 1. Because the table's role and evaluation protocol are not fully clear, treat this as a close mAP match and a partial reproduction—not an exact, matched-protocol reproduction of all three scores. The full run settings and limitations are recorded below and in [`MusicTalk_OpenMIC_重現紀錄.md`](MusicTalk_OpenMIC_重現紀錄.md).
+
 ## Reproduction gates
 
 1. Verify the OpenMIC archive checksum and inspect its supplied splits and labels. **Complete.**
