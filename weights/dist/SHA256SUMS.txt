@@ -1,0 +1,3 @@
+4639a08e6ee34258ad1db84395ea599f7284e2fde515efceec4087a0e0da0402  /mnt/c/TATQAQOAO/0_ntsc_project/MusicTalk/weights/dist/musictalk_FP16_best_and_pretrained_weights.7z
+68330f50e39e193e3f26a208fe6407f056006dcd33988b4a39815e7af134ccbe  /mnt/c/TATQAQOAO/0_ntsc_project/MusicTalk/weights/dist/musictalk_FP16_checkpoints_epoch05-15.7z
+30783b292d55ed45c564eae9df1a9a9252521b72cdd60c6c2b7e2e612e8d4d90  /mnt/c/TATQAQOAO/0_ntsc_project/MusicTalk/weights/dist/musictalk_FP16_checkpoints_epoch20-30.7z
