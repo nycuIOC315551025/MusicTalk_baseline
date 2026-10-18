@@ -1,0 +1,25 @@
+{
+  "purpose": "pipeline smoke baseline; not complete MusicTalk architecture",
+  "dataset": "OpenMIC-2018 official VGGish NPZ features",
+  "official_partition": "train01 only; official test01 is not touched",
+  "train_partition_file": "split01_train.csv",
+  "test_partition_file_verified_disjoint": "split01_test.csv",
+  "split": "deterministic 85/15 holdout within train01, then cap train and validation independently",
+  "x_key": "X",
+  "feature_decode": "VGGish uint8 [0,255] dequantized linearly to [-2,2]",
+  "y_key": "Y_true",
+  "mask_key": "Y_mask",
+  "class_weighting": "inverse observed positive/negative class frequency, computed on capped train subset",
+  "label_threshold": 0.5,
+  "train_samples": 1024,
+  "validation_samples": 256,
+  "num_instruments": 20,
+  "input_shape_per_clip": [
+    10,
+    128
+  ],
+  "epochs": 1,
+  "batch_size": 64,
+  "seed": 17,
+  "device": "cuda"
+}

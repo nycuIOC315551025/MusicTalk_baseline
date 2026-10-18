@@ -1,0 +1,2 @@
+epoch,train_masked_weighted_bce,val_masked_weighted_bce,val_macro_roc_auc,val_map,val_macro_f1_roc_tuned,val_metric_classes,seconds
+1,0.6167536622540081,0.4889604151248932,0.87129505836749,0.7910226688514509,0.7992567716752191,20,0.18657499994151294

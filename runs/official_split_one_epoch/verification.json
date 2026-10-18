@@ -1,0 +1,40 @@
+{
+  "status": "verified",
+  "train_samples": 12677,
+  "validation_samples": 2238,
+  "official_test_samples": 5085,
+  "train_validation_overlap": 0,
+  "train_test_overlap": 0,
+  "validation_test_overlap": 0,
+  "official_test_scored": false,
+  "checkpoint_reloaded": true,
+  "trainable_head_shapes": {
+    "passt_openmic_head": {
+      "weight": [
+        20,
+        768
+      ],
+      "bias": [
+        20
+      ]
+    },
+    "panns_openmic_head": {
+      "weight": [
+        20,
+        2048
+      ],
+      "bias": [
+        20
+      ]
+    },
+    "fusion": {
+      "weight": [
+        20,
+        40
+      ],
+      "bias": [
+        20
+      ]
+    }
+  }
+}

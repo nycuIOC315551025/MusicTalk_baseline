@@ -1,0 +1,41 @@
+{
+  "status": "epoch_cap_reached",
+  "stop_reason": "epoch_cap_reached",
+  "best_epoch": 1,
+  "best_validation_loss_weighted_masked_bce": 0.3135336125890414,
+  "epochs_run": 1,
+  "requested_epoch_cap": 1,
+  "early_stopping_patience": 10,
+  "backbones_frozen": false,
+  "official_test_evaluated": false,
+  "checkpoint": "C:\\TATQAQOAO\\0_ntsc_project\\MusicTalk\\runs\\paper_aligned_smoke_20261011\\checkpoint_best.pt",
+  "best_validation_metrics": {
+    "validation_macro_roc_auc": 0.5,
+    "validation_macro_average_precision": 0.7083333333333333,
+    "validation_macro_f1_roc_nearest": 0.8333333333333333,
+    "validation_scored_classes": 2,
+    "validation_class_thresholds_roc_nearest": [
+      0.7380776405334473,
+      null,
+      null,
+      null,
+      null,
+      0.44956502318382263,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "note": "Paper-guided OpenMIC run. If status is epoch_cap_reached, this is a capped development reproduction, not a patience-converged paper-length run."
+}

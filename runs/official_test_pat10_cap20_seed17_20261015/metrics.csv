@@ -1,0 +1,2 @@
+test_macro_roc_auc,test_macro_average_precision,test_macro_f1_at_validation_roc_nearest_thresholds,test_scored_classes_roc_auc_and_ap,test_f1_scored_classes,test_observed_labels,inference_seconds,examples_per_second
+0.914941364722368,0.8497018019269911,0.7995914081989569,20,20,10522,222.06465796300108,22.898736100758676

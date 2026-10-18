@@ -1,0 +1,102 @@
+/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/vendor/python_deps/sacred/dependencies.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+DATA_READY train=12677 val=2238 elapsed_s=0.03
+LOADING_PASST
+PASST_READY elapsed_s=0.86
+LOADING_PANNS
+PANNS_MODEL_INIT_START
+PANNS_MODEL_INIT_DONE
+PANNS_CHECKPOINT_LOAD_START
+PANNS_CHECKPOINT_LOAD_DONE
+PANNS_READY elapsed_s=1.21
+MODEL_READY device=NVIDIA GeForce RTX 3090 frozen=False trainable_params=159,202,672
+/home/user/miniforge3/envs/musictalk-py312/lib/python3.12/site-packages/torch/functional.py:681: UserWarning: stft with return_complex=False is deprecated. In a future pytorch release, stft will return complex tensors for all inputs, and return_complex=False will raise an error.
+Note: you can still call torch.view_as_real on the complex output to recover the old return format. (Triggered internally at /pytorch/aten/src/ATen/native/SpectralOps.cpp:874.)
+  return _VF.stft(  # type: ignore[attr-defined]
+/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/vendor/PaSST/models/preprocess.py:77: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/vendor/PaSST/models/passt.py:321: UserWarning: Input image size (128*1000) doesn't match model (128*998).
+  warnings.warn(f"Input image size ({H}*{W}) doesn't match model ({self.img_size[0]}*{self.img_size[1]}).")
+TRAIN epoch=6/20 batch=1/3170 loss=0.17077
+TRAIN epoch=6/20 batch=250/3170 loss=0.24106
+TRAIN epoch=6/20 batch=500/3170 loss=0.14446
+TRAIN epoch=6/20 batch=750/3170 loss=0.03550
+TRAIN epoch=6/20 batch=1000/3170 loss=0.10014
+TRAIN epoch=6/20 batch=1250/3170 loss=0.54742
+TRAIN epoch=6/20 batch=1500/3170 loss=0.24837
+TRAIN epoch=6/20 batch=1750/3170 loss=0.38802
+TRAIN epoch=6/20 batch=2000/3170 loss=0.90012
+TRAIN epoch=6/20 batch=2250/3170 loss=0.24968
+TRAIN epoch=6/20 batch=2500/3170 loss=0.80503
+TRAIN epoch=6/20 batch=2750/3170 loss=0.29259
+TRAIN epoch=6/20 batch=3000/3170 loss=0.20398
+EPOCH_DONE epoch=6 train_loss=0.24933 val_loss=0.35293 val_auc=0.9226803973521174 val_mAP=0.8713130940240124 val_f1=0.8280526254073075 best=5 time_s=722.7
+TRAIN epoch=7/20 batch=1/3170 loss=0.10254
+TRAIN epoch=7/20 batch=250/3170 loss=0.21027
+TRAIN epoch=7/20 batch=500/3170 loss=0.16125
+TRAIN epoch=7/20 batch=750/3170 loss=0.18760
+TRAIN epoch=7/20 batch=1000/3170 loss=0.12049
+TRAIN epoch=7/20 batch=1250/3170 loss=0.06054
+TRAIN epoch=7/20 batch=1500/3170 loss=0.07873
+TRAIN epoch=7/20 batch=1750/3170 loss=0.05482
+TRAIN epoch=7/20 batch=2000/3170 loss=0.10787
+TRAIN epoch=7/20 batch=2250/3170 loss=0.08547
+TRAIN epoch=7/20 batch=2500/3170 loss=0.50501
+TRAIN epoch=7/20 batch=2750/3170 loss=0.06215
+TRAIN epoch=7/20 batch=3000/3170 loss=0.31219
+EPOCH_DONE epoch=7 train_loss=0.22577 val_loss=0.35382 val_auc=0.920821763861573 val_mAP=0.8620493297444124 val_f1=0.8285586566744376 best=5 time_s=709.5
+TRAIN epoch=8/20 batch=1/3170 loss=0.57677
+TRAIN epoch=8/20 batch=250/3170 loss=0.15446
+TRAIN epoch=8/20 batch=500/3170 loss=0.11702
+TRAIN epoch=8/20 batch=750/3170 loss=0.04712
+TRAIN epoch=8/20 batch=1000/3170 loss=0.16021
+TRAIN epoch=8/20 batch=1250/3170 loss=0.06657
+TRAIN epoch=8/20 batch=1500/3170 loss=0.06857
+TRAIN epoch=8/20 batch=1750/3170 loss=0.08513
+TRAIN epoch=8/20 batch=2000/3170 loss=0.23603
+TRAIN epoch=8/20 batch=2250/3170 loss=0.09218
+TRAIN epoch=8/20 batch=2500/3170 loss=0.12832
+TRAIN epoch=8/20 batch=2750/3170 loss=0.05789
+TRAIN epoch=8/20 batch=3000/3170 loss=0.16971
+EPOCH_DONE epoch=8 train_loss=0.20677 val_loss=0.35942 val_auc=0.919572734177643 val_mAP=0.8617244746139887 val_f1=0.8281383759773092 best=5 time_s=710.0
+TRAIN epoch=9/20 batch=1/3170 loss=0.18347
+TRAIN epoch=9/20 batch=250/3170 loss=0.25837
+TRAIN epoch=9/20 batch=500/3170 loss=0.03531
+TRAIN epoch=9/20 batch=750/3170 loss=0.41369
+TRAIN epoch=9/20 batch=1000/3170 loss=0.21766
+TRAIN epoch=9/20 batch=1250/3170 loss=0.03054
+TRAIN epoch=9/20 batch=1500/3170 loss=0.06553
+TRAIN epoch=9/20 batch=1750/3170 loss=0.05839
+TRAIN epoch=9/20 batch=2000/3170 loss=0.10568
+TRAIN epoch=9/20 batch=2250/3170 loss=0.13609
+TRAIN epoch=9/20 batch=2500/3170 loss=0.03766
+TRAIN epoch=9/20 batch=2750/3170 loss=0.28015
+TRAIN epoch=9/20 batch=3000/3170 loss=0.15924
+EPOCH_DONE epoch=9 train_loss=0.18530 val_loss=0.36271 val_auc=0.9188892456793442 val_mAP=0.8654792550311372 val_f1=0.8308790595087906 best=5 time_s=710.3
+TRAIN epoch=10/20 batch=1/3170 loss=0.15008
+TRAIN epoch=10/20 batch=250/3170 loss=0.21901
+TRAIN epoch=10/20 batch=500/3170 loss=0.30382
+TRAIN epoch=10/20 batch=750/3170 loss=0.12583
+TRAIN epoch=10/20 batch=1000/3170 loss=0.22473
+TRAIN epoch=10/20 batch=1250/3170 loss=0.02325
+TRAIN epoch=10/20 batch=1500/3170 loss=0.42573
+TRAIN epoch=10/20 batch=1750/3170 loss=0.29954
+TRAIN epoch=10/20 batch=2000/3170 loss=0.12657
+TRAIN epoch=10/20 batch=2250/3170 loss=0.14500
+TRAIN epoch=10/20 batch=2500/3170 loss=0.16162
+TRAIN epoch=10/20 batch=2750/3170 loss=0.00912
+TRAIN epoch=10/20 batch=3000/3170 loss=0.32144
+EPOCH_DONE epoch=10 train_loss=0.16825 val_loss=0.36866 val_auc=0.9185861419707425 val_mAP=0.8635069312712291 val_f1=0.827236311190525 best=5 time_s=710.3
+TRAIN epoch=11/20 batch=1/3170 loss=0.35608
+TRAIN epoch=11/20 batch=250/3170 loss=0.39099
+TRAIN epoch=11/20 batch=500/3170 loss=0.10577
+TRAIN epoch=11/20 batch=750/3170 loss=0.19023
+TRAIN epoch=11/20 batch=1000/3170 loss=0.41007
+TRAIN epoch=11/20 batch=1250/3170 loss=0.05824
+TRAIN epoch=11/20 batch=1500/3170 loss=0.01560
+TRAIN epoch=11/20 batch=1750/3170 loss=0.92771
+TRAIN epoch=11/20 batch=2000/3170 loss=0.22090
+TRAIN epoch=11/20 batch=2250/3170 loss=0.11264
+TRAIN epoch=11/20 batch=2500/3170 loss=0.12439
+TRAIN epoch=11/20 batch=2750/3170 loss=0.07009
+TRAIN epoch=11/20 batch=3000/3170 loss=0.18256

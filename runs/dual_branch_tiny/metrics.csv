@@ -1,0 +1,2 @@
+training_loss_weighted_masked_bce,validation_loss_weighted_masked_bce,train_seconds
+0.39814975261688235,0.0,0.5351204000180587

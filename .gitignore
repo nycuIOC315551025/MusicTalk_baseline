@@ -1,0 +1,26 @@
+# Model parameters and trained checkpoints stay local; GitHub's regular Git
+# object limit is unsuitable for these multi-hundred-megabyte files.
+weights/*.pt
+weights/*.pth
+runs/**/*.pt
+runs/**/*.pth
+
+# Local Python dependency cache / environment snapshot (use requirements files
+# and the documented setup instead of committing copied binaries).
+vendor/python_deps/
+
+# Runtime and transient files.
+**/__pycache__/
+*.py[cod]
+*.log.tmp
+
+vendor/PANNs_git_checkout/
+vendor/PaSST_git_checkout/
+vendor/**/__pycache__/
+vendor/**/*.py[cod]
+vendor/**/*.wav
+vendor/**/*.ogg
+vendor/**/*.mp3
+vendor/**/*.flac
+vendor/PANNs/metadata/groundtruth_weak_label*.csv
+vendor/PANNs/metadata/black_list/*.csv

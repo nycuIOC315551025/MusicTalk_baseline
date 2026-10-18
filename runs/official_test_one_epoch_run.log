@@ -1,0 +1,83 @@
+C:\TATQAQOAO\0_ntsc_project\MusicTalk\vendor\python_deps\docopt.py:165: SyntaxWarning: invalid escape sequence '\S'
+  name = re.findall('(<\S*?>)', source)[0]
+C:\TATQAQOAO\0_ntsc_project\MusicTalk\vendor\python_deps\docopt.py:166: SyntaxWarning: invalid escape sequence '\['
+  value = re.findall('\[default: (.*)\]', source, flags=re.I)
+C:\TATQAQOAO\0_ntsc_project\MusicTalk\vendor\python_deps\docopt.py:207: SyntaxWarning: invalid escape sequence '\['
+  matched = re.findall('\[default: (.*)\]', description, flags=re.I)
+C:\TATQAQOAO\0_ntsc_project\MusicTalk\vendor\python_deps\docopt.py:456: SyntaxWarning: invalid escape sequence '\S'
+  split = re.split('\n *(<\S+?>|-\S+?)', doc)[1:]
+LOADING_PASST
+LOADING_PANNS
+PANNS_MODEL_INIT_START
+PANNS_MODEL_INIT_DONE
+PANNS_CHECKPOINT_LOAD_START
+PANNS_CHECKPOINT_LOAD_DONE
+C:\uwuowoawa\1_Laboratory_master\master_paper_behavior_model\.venv\Lib\site-packages\torch\functional.py:681: UserWarning: stft with return_complex=False is deprecated. In a future pytorch release, stft will return complex tensors for all inputs, and return_complex=False will raise an error.
+Note: you can still call torch.view_as_real on the complex output to recover the old return format. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\SpectralOps.cpp:879.)
+  return _VF.stft(  # type: ignore[attr-defined]
+C:\TATQAQOAO\0_ntsc_project\MusicTalk\vendor\PaSST\models\preprocess.py:77: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+C:\TATQAQOAO\0_ntsc_project\MusicTalk\vendor\PaSST\models\passt.py:321: UserWarning: Input image size (128*1000) doesn't match model (128*998).
+  warnings.warn(f"Input image size ({H}*{W}) doesn't match model ({self.img_size[0]}*{self.img_size[1]}).")
+TEST_FORWARD batch=100/636 elapsed=38.5s
+TEST_FORWARD batch=200/636 elapsed=76.7s
+TEST_FORWARD batch=300/636 elapsed=115.3s
+TEST_FORWARD batch=400/636 elapsed=153.4s
+TEST_FORWARD batch=500/636 elapsed=191.5s
+TEST_FORWARD batch=600/636 elapsed=229.6s
+TEST_FORWARD batch=636/636 elapsed=243.3s
+{
+  "status": "completed",
+  "dataset": "OpenMIC-2018 official split01_test, raw OGG audio",
+  "official_test_evaluated": true,
+  "test_samples": 5085,
+  "test_observed_labels": 10522,
+  "test_scored_classes_roc_auc_and_ap": 20,
+  "test_macro_roc_auc": 0.9090690630707201,
+  "test_macro_average_precision": 0.8381082250319455,
+  "test_macro_f1_at_validation_roc_nearest_thresholds": 0.7943563123241403,
+  "test_f1_scored_classes": 20,
+  "test_f1_per_class_at_validation_thresholds": [
+    0.5836065573770491,
+    0.6690140845070423,
+    0.625,
+    0.8285077951002228,
+    0.529126213592233,
+    0.9515859766277128,
+    0.9274336283185841,
+    0.6181015452538632,
+    0.9584086799276673,
+    0.819672131147541,
+    0.7216035634743875,
+    0.6523297491039427,
+    0.9505962521294719,
+    0.8859060402684564,
+    0.9701492537313433,
+    0.7782258064516129,
+    0.826625386996904,
+    0.7344913151364765,
+    0.9163449163449163,
+    0.9403973509933775
+  ],
+  "f1_threshold_source": "Per-class ROC-nearest thresholds selected on the one-epoch validation split and saved in the training checkpoint.",
+  "test_thresholds_tuned_on_test": false,
+  "validation_macro_roc_auc_reference": 0.9172418314044473,
+  "validation_macro_average_precision_reference": 0.8574993511567138,
+  "checkpoint": "C:\\TATQAQOAO\\0_ntsc_project\\MusicTalk\\runs\\official_split_one_epoch\\checkpoint_heads.pt",
+  "checkpoint_sha256": "521f08d3e7f3a03fbf6c6a6c3b4cd43f8bb63b777e8156f3f27a6dc570d0142d",
+  "seed": 17,
+  "training_epochs": 1,
+  "training_samples": 12677,
+  "validation_samples": 2238,
+  "batch_size": 8,
+  "device": "NVIDIA GeForce RTX 3090",
+  "inference_seconds": 243.28817100008018,
+  "examples_per_second": 20.901139496824626,
+  "passt_checkpoint_missing_head_keys": [
+    "head.1.bias",
+    "head.1.weight",
+    "head_dist.bias",
+    "head_dist.weight"
+  ],
+  "note": "Held-out test evaluation of the one-epoch development checkpoint; not a paper-length training reproduction."
+}

@@ -1,0 +1,2 @@
+{"epoch": 1, "train_masked_weighted_bce": 0.6167536622540081, "val_masked_weighted_bce": 0.4889604151248932, "val_macro_roc_auc": 0.87129505836749, "val_map": 0.7910226688514509, "val_macro_f1_roc_tuned": 0.7992567716752191, "val_metric_classes": 20, "seconds": 0.18657499994151294}
+Saved smoke artifacts to MusicTalk\runs\smoke

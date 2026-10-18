@@ -1,0 +1,40 @@
+[
+  {
+    "epoch": 1,
+    "training_loss_weighted_masked_bce": 0.5275560617446899,
+    "validation_loss_weighted_masked_bce": 0.3135336125890414,
+    "validation_observed_labels": 15,
+    "train_seconds": 3.181338799999992,
+    "validation_metrics": {
+      "validation_macro_roc_auc": 0.5,
+      "validation_macro_average_precision": 0.7083333333333333,
+      "validation_macro_f1_roc_nearest": 0.8333333333333333,
+      "validation_scored_classes": 2,
+      "validation_class_thresholds_roc_nearest": [
+        0.7380776405334473,
+        null,
+        null,
+        null,
+        null,
+        0.44956502318382263,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "improved_best_validation_loss": true,
+    "epochs_without_improvement": 0,
+    "cuda_peak_allocated_bytes": 4221791744
+  }
+]

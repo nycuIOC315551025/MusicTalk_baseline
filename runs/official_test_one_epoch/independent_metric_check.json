@@ -1,0 +1,10 @@
+{
+  "independent_macro_roc_auc_rank_method": 0.9090690630707201,
+  "independent_macro_average_precision_step_method": 0.8381082250319455,
+  "independent_macro_f1_validation_thresholds": 0.7943563123241403,
+  "auc_abs_delta": 0.0,
+  "ap_abs_delta": 0.0,
+  "f1_abs_delta": 0.0,
+  "classes_auc_ap": 20,
+  "classes_f1": 20
+}

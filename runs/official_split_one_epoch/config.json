@@ -1,0 +1,12 @@
+{
+  "dataset_dir": "C:\\TATQAQOAO\\0_ntsc_project\\0_dataset\\processed\\openmic-2018",
+  "weights_dir": "C:\\TATQAQOAO\\0_ntsc_project\\MusicTalk\\weights",
+  "output_dir": "MusicTalk\\runs\\official_split_one_epoch",
+  "seed": 17,
+  "max_train": 12677,
+  "max_val": 2238,
+  "batch_size": 8,
+  "epochs": 1,
+  "learning_rate": 0.0003,
+  "bcp_drop": 3
+}

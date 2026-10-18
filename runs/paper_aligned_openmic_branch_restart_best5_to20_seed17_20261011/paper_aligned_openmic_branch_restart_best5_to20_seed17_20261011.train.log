@@ -1,0 +1,218 @@
+/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/vendor/python_deps/sacred/dependencies.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+DATA_READY train=12677 val=2238 elapsed_s=0.03
+LOADING_PASST
+PASST_READY elapsed_s=0.88
+LOADING_PANNS
+PANNS_MODEL_INIT_START
+PANNS_MODEL_INIT_DONE
+PANNS_CHECKPOINT_LOAD_START
+PANNS_CHECKPOINT_LOAD_DONE
+PANNS_READY elapsed_s=1.22
+MODEL_READY device=NVIDIA GeForce RTX 3090 frozen=False trainable_params=159,202,672
+/home/user/miniforge3/envs/musictalk-py312/lib/python3.12/site-packages/torch/functional.py:681: UserWarning: stft with return_complex=False is deprecated. In a future pytorch release, stft will return complex tensors for all inputs, and return_complex=False will raise an error.
+Note: you can still call torch.view_as_real on the complex output to recover the old return format. (Triggered internally at /pytorch/aten/src/ATen/native/SpectralOps.cpp:874.)
+  return _VF.stft(  # type: ignore[attr-defined]
+/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/vendor/PaSST/models/preprocess.py:77: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/vendor/PaSST/models/passt.py:321: UserWarning: Input image size (128*1000) doesn't match model (128*998).
+  warnings.warn(f"Input image size ({H}*{W}) doesn't match model ({self.img_size[0]}*{self.img_size[1]}).")
+TRAIN epoch=6/20 batch=1/3170 loss=0.17077
+TRAIN epoch=6/20 batch=250/3170 loss=0.24741
+TRAIN epoch=6/20 batch=500/3170 loss=0.14506
+TRAIN epoch=6/20 batch=750/3170 loss=0.03521
+TRAIN epoch=6/20 batch=1000/3170 loss=0.09642
+TRAIN epoch=6/20 batch=1250/3170 loss=0.52357
+TRAIN epoch=6/20 batch=1500/3170 loss=0.23535
+TRAIN epoch=6/20 batch=1750/3170 loss=0.37361
+TRAIN epoch=6/20 batch=2000/3170 loss=0.84281
+TRAIN epoch=6/20 batch=2250/3170 loss=0.22599
+TRAIN epoch=6/20 batch=2500/3170 loss=0.79437
+TRAIN epoch=6/20 batch=2750/3170 loss=0.26064
+TRAIN epoch=6/20 batch=3000/3170 loss=0.21903
+EPOCH_DONE epoch=6 train_loss=0.24909 val_loss=0.35381 val_auc=0.9215310931930111 val_mAP=0.8669186692256814 val_f1=0.8287683186884618 best=5 time_s=721.7
+TRAIN epoch=7/20 batch=1/3170 loss=0.10628
+TRAIN epoch=7/20 batch=250/3170 loss=0.18374
+TRAIN epoch=7/20 batch=500/3170 loss=0.22367
+TRAIN epoch=7/20 batch=750/3170 loss=0.17882
+TRAIN epoch=7/20 batch=1000/3170 loss=0.11809
+TRAIN epoch=7/20 batch=1250/3170 loss=0.05296
+TRAIN epoch=7/20 batch=1500/3170 loss=0.09371
+TRAIN epoch=7/20 batch=1750/3170 loss=0.04766
+TRAIN epoch=7/20 batch=2000/3170 loss=0.10710
+TRAIN epoch=7/20 batch=2250/3170 loss=0.08599
+TRAIN epoch=7/20 batch=2500/3170 loss=0.53307
+TRAIN epoch=7/20 batch=2750/3170 loss=0.06430
+TRAIN epoch=7/20 batch=3000/3170 loss=0.31702
+EPOCH_DONE epoch=7 train_loss=0.22584 val_loss=0.34869 val_auc=0.9223931470896517 val_mAP=0.8647777061994212 val_f1=0.8313259806836804 best=5 time_s=708.1
+TRAIN epoch=8/20 batch=1/3170 loss=0.55383
+TRAIN epoch=8/20 batch=250/3170 loss=0.17660
+TRAIN epoch=8/20 batch=500/3170 loss=0.11695
+TRAIN epoch=8/20 batch=750/3170 loss=0.04685
+TRAIN epoch=8/20 batch=1000/3170 loss=0.14691
+TRAIN epoch=8/20 batch=1250/3170 loss=0.07197
+TRAIN epoch=8/20 batch=1500/3170 loss=0.06791
+TRAIN epoch=8/20 batch=1750/3170 loss=0.07894
+TRAIN epoch=8/20 batch=2000/3170 loss=0.22969
+TRAIN epoch=8/20 batch=2250/3170 loss=0.08701
+TRAIN epoch=8/20 batch=2500/3170 loss=0.12961
+TRAIN epoch=8/20 batch=2750/3170 loss=0.05705
+TRAIN epoch=8/20 batch=3000/3170 loss=0.18127
+EPOCH_DONE epoch=8 train_loss=0.20650 val_loss=0.35831 val_auc=0.9207517696215733 val_mAP=0.8655325261280788 val_f1=0.8290717327240886 best=5 time_s=708.8
+TRAIN epoch=9/20 batch=1/3170 loss=0.18085
+TRAIN epoch=9/20 batch=250/3170 loss=0.25326
+TRAIN epoch=9/20 batch=500/3170 loss=0.03899
+TRAIN epoch=9/20 batch=750/3170 loss=0.37334
+TRAIN epoch=9/20 batch=1000/3170 loss=0.22193
+TRAIN epoch=9/20 batch=1250/3170 loss=0.03481
+TRAIN epoch=9/20 batch=1500/3170 loss=0.07009
+TRAIN epoch=9/20 batch=1750/3170 loss=0.05664
+TRAIN epoch=9/20 batch=2000/3170 loss=0.10419
+TRAIN epoch=9/20 batch=2250/3170 loss=0.13775
+TRAIN epoch=9/20 batch=2500/3170 loss=0.03694
+TRAIN epoch=9/20 batch=2750/3170 loss=0.27645
+TRAIN epoch=9/20 batch=3000/3170 loss=0.16428
+EPOCH_DONE epoch=9 train_loss=0.18485 val_loss=0.36349 val_auc=0.9185114908088623 val_mAP=0.8649506184185676 val_f1=0.8287960370287604 best=5 time_s=709.1
+TRAIN epoch=10/20 batch=1/3170 loss=0.15262
+TRAIN epoch=10/20 batch=250/3170 loss=0.20228
+TRAIN epoch=10/20 batch=500/3170 loss=0.25370
+TRAIN epoch=10/20 batch=750/3170 loss=0.11934
+TRAIN epoch=10/20 batch=1000/3170 loss=0.21724
+TRAIN epoch=10/20 batch=1250/3170 loss=0.02046
+TRAIN epoch=10/20 batch=1500/3170 loss=0.43953
+TRAIN epoch=10/20 batch=1750/3170 loss=0.26291
+TRAIN epoch=10/20 batch=2000/3170 loss=0.13417
+TRAIN epoch=10/20 batch=2250/3170 loss=0.12430
+TRAIN epoch=10/20 batch=2500/3170 loss=0.16060
+TRAIN epoch=10/20 batch=2750/3170 loss=0.00900
+TRAIN epoch=10/20 batch=3000/3170 loss=0.35203
+EPOCH_DONE epoch=10 train_loss=0.16827 val_loss=0.36761 val_auc=0.9187312101638134 val_mAP=0.8612323139368504 val_f1=0.8320170939958678 best=5 time_s=709.5
+TRAIN epoch=11/20 batch=1/3170 loss=0.34438
+TRAIN epoch=11/20 batch=250/3170 loss=0.39170
+TRAIN epoch=11/20 batch=500/3170 loss=0.11294
+TRAIN epoch=11/20 batch=750/3170 loss=0.19034
+TRAIN epoch=11/20 batch=1000/3170 loss=0.39994
+TRAIN epoch=11/20 batch=1250/3170 loss=0.05442
+TRAIN epoch=11/20 batch=1500/3170 loss=0.01832
+TRAIN epoch=11/20 batch=1750/3170 loss=0.51484
+TRAIN epoch=11/20 batch=2000/3170 loss=0.18281
+TRAIN epoch=11/20 batch=2250/3170 loss=0.11800
+TRAIN epoch=11/20 batch=2500/3170 loss=0.09369
+TRAIN epoch=11/20 batch=2750/3170 loss=0.08476
+TRAIN epoch=11/20 batch=3000/3170 loss=0.17595
+EPOCH_DONE epoch=11 train_loss=0.16353 val_loss=0.38014 val_auc=0.9172768965316316 val_mAP=0.8594034640046928 val_f1=0.8269282792109589 best=5 time_s=708.7
+TRAIN epoch=12/20 batch=1/3170 loss=0.04346
+TRAIN epoch=12/20 batch=250/3170 loss=0.06682
+TRAIN epoch=12/20 batch=500/3170 loss=0.30907
+TRAIN epoch=12/20 batch=750/3170 loss=0.03996
+TRAIN epoch=12/20 batch=1000/3170 loss=0.17926
+TRAIN epoch=12/20 batch=1250/3170 loss=0.38404
+TRAIN epoch=12/20 batch=1500/3170 loss=0.05042
+TRAIN epoch=12/20 batch=1750/3170 loss=0.33409
+TRAIN epoch=12/20 batch=2000/3170 loss=0.07245
+TRAIN epoch=12/20 batch=2250/3170 loss=0.12233
+TRAIN epoch=12/20 batch=2500/3170 loss=0.24520
+TRAIN epoch=12/20 batch=2750/3170 loss=0.02601
+TRAIN epoch=12/20 batch=3000/3170 loss=0.44223
+EPOCH_DONE epoch=12 train_loss=0.15095 val_loss=0.38172 val_auc=0.9157975679907345 val_mAP=0.8599715514484242 val_f1=0.8255219357280736 best=5 time_s=708.5
+TRAIN epoch=13/20 batch=1/3170 loss=0.24810
+TRAIN epoch=13/20 batch=250/3170 loss=0.34548
+TRAIN epoch=13/20 batch=500/3170 loss=0.06622
+TRAIN epoch=13/20 batch=750/3170 loss=0.01931
+TRAIN epoch=13/20 batch=1000/3170 loss=0.12344
+TRAIN epoch=13/20 batch=1250/3170 loss=0.06573
+TRAIN epoch=13/20 batch=1500/3170 loss=0.44953
+TRAIN epoch=13/20 batch=1750/3170 loss=0.11767
+TRAIN epoch=13/20 batch=2000/3170 loss=0.11878
+TRAIN epoch=13/20 batch=2250/3170 loss=0.44365
+TRAIN epoch=13/20 batch=2500/3170 loss=0.02329
+TRAIN epoch=13/20 batch=2750/3170 loss=0.24252
+TRAIN epoch=13/20 batch=3000/3170 loss=0.02728
+EPOCH_DONE epoch=13 train_loss=0.13785 val_loss=0.40095 val_auc=0.9142413513211087 val_mAP=0.8600196554104647 val_f1=0.8286619861451602 best=5 time_s=708.1
+TRAIN epoch=14/20 batch=1/3170 loss=0.52356
+TRAIN epoch=14/20 batch=250/3170 loss=0.02791
+TRAIN epoch=14/20 batch=500/3170 loss=0.06123
+TRAIN epoch=14/20 batch=750/3170 loss=0.00940
+TRAIN epoch=14/20 batch=1000/3170 loss=0.10442
+TRAIN epoch=14/20 batch=1250/3170 loss=0.01187
+TRAIN epoch=14/20 batch=1500/3170 loss=0.01360
+TRAIN epoch=14/20 batch=1750/3170 loss=0.01462
+TRAIN epoch=14/20 batch=2000/3170 loss=0.02262
+TRAIN epoch=14/20 batch=2250/3170 loss=0.27282
+TRAIN epoch=14/20 batch=2500/3170 loss=0.10659
+TRAIN epoch=14/20 batch=2750/3170 loss=0.05414
+TRAIN epoch=14/20 batch=3000/3170 loss=0.07902
+EPOCH_DONE epoch=14 train_loss=0.12906 val_loss=0.41129 val_auc=0.9136003629513265 val_mAP=0.8586325433244653 val_f1=0.8202732536202577 best=5 time_s=708.3
+TRAIN epoch=15/20 batch=1/3170 loss=0.05170
+TRAIN epoch=15/20 batch=250/3170 loss=0.04714
+TRAIN epoch=15/20 batch=500/3170 loss=0.02645
+TRAIN epoch=15/20 batch=750/3170 loss=0.18778
+TRAIN epoch=15/20 batch=1000/3170 loss=0.05533
+TRAIN epoch=15/20 batch=1250/3170 loss=0.05288
+TRAIN epoch=15/20 batch=1500/3170 loss=0.11751
+TRAIN epoch=15/20 batch=1750/3170 loss=0.39550
+TRAIN epoch=15/20 batch=2000/3170 loss=0.46114
+TRAIN epoch=15/20 batch=2250/3170 loss=0.07549
+TRAIN epoch=15/20 batch=2500/3170 loss=0.10112
+TRAIN epoch=15/20 batch=2750/3170 loss=0.08360
+TRAIN epoch=15/20 batch=3000/3170 loss=0.01999
+EPOCH_DONE epoch=15 train_loss=0.11721 val_loss=0.43198 val_auc=0.9112880253117381 val_mAP=0.8577425617149637 val_f1=0.8209279073270273 best=5 time_s=709.3
+EARLY_STOP epoch=15 patience=10
+{
+  "status": "early_stopped",
+  "stop_reason": "early_stopping_patience_reached",
+  "best_epoch": 5,
+  "best_validation_loss_weighted_masked_bce": 0.34724577655520905,
+  "epochs_run": 10,
+  "first_epoch_index_this_stage": 6,
+  "last_epoch_index": 15,
+  "source_checkpoint_epoch": 5,
+  "source_run_epochs_completed": 13,
+  "epochs_run_this_stage": 10,
+  "requested_epoch_cap": 20,
+  "early_stopping_patience": 10,
+  "backbones_frozen": false,
+  "official_test_evaluated": false,
+  "checkpoint": "/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/runs/paper_aligned_openmic_branch_restart_best5_to20_seed17_20261011/checkpoint_best.pt",
+  "best_validation_metrics": {
+    "validation_macro_roc_auc": 0.9236111658002301,
+    "validation_macro_average_precision": 0.8660408232159569,
+    "validation_macro_f1_roc_nearest": 0.8259069432004006,
+    "validation_scored_classes": 20,
+    "validation_class_thresholds_roc_nearest": [
+      0.5094566941261292,
+      0.6023721098899841,
+      0.5538041591644287,
+      0.5134004950523376,
+      0.5515334606170654,
+      0.5601312518119812,
+      0.7255830764770508,
+      0.47429874539375305,
+      0.5693088173866272,
+      0.5226386189460754,
+      0.6613308191299438,
+      0.3767256736755371,
+      0.6398825645446777,
+      0.6431908011436462,
+      0.7592278718948364,
+      0.575659990310669,
+      0.6408994793891907,
+      0.5936799645423889,
+      0.7641526460647583,
+      0.48228174448013306
+    ]
+  },
+  "continuation": {
+    "kind": "best_checkpoint_branch_with_optimizer_and_rng_reset",
+    "source_checkpoint": "/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/runs/paper_aligned_openmic_pat10_cap13_seed17_20261011/checkpoint_best.pt",
+    "source_checkpoint_sha256": "a6500994a4cdf4b44772ad10e4b83eb204e00c232fc2eee6b0b5b7d73f41629c",
+    "source_checkpoint_epoch": 5,
+    "source_run_epochs_completed": 13,
+    "optimizer_state_restored": false,
+    "rng_state_restored": false,
+    "optimizer": "new AdamW state initialized from the same recorded hyperparameters",
+    "rng": "reseeded from the same seed; generator position is not resumed",
+    "interpretation": "fine-tuning branch from the best saved epoch, not an exact resume from the source run's final epoch"
+  },
+  "note": "Best-checkpoint fine-tuning branch with optimizer and RNG reset; not an exact resume of the source run."
+}

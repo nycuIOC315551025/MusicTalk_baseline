@@ -1,0 +1,49 @@
+{
+  "status": "completed",
+  "dataset": "OpenMIC-2018 official split01_train, raw OGG audio",
+  "seed": 17,
+  "epochs": 1,
+  "train_samples": 12,
+  "validation_samples": 4,
+  "batch_size": 2,
+  "training_loss_weighted_masked_bce": 0.5163862842779893,
+  "validation_loss_weighted_masked_bce": 0.09140251111239195,
+  "validation_observed_labels": 8,
+  "validation_probability_range": [
+    0.270170122385025,
+    0.7636333107948303
+  ],
+  "train_seconds": 0.7861484999302775,
+  "device": "NVIDIA GeForce RTX 3090",
+  "passt_checkpoint_missing_head_keys": [
+    "head.1.bias",
+    "head.1.weight",
+    "head_dist.bias",
+    "head_dist.weight"
+  ],
+  "bcp_wp_frequency_patches": 12,
+  "bcp_wp_dropped_patches": 3,
+  "frozen_backbones": true,
+  "official_test_evaluated": false,
+  "train_ids": [
+    "113003_30720",
+    "089886_53760",
+    "094777_583680",
+    "035225_238080",
+    "149966_261120",
+    "108114_69120",
+    "046116_983040",
+    "057840_387840",
+    "021851_42240",
+    "055217_53760",
+    "091232_76800",
+    "013151_595200"
+  ],
+  "validation_ids": [
+    "041944_19200",
+    "065403_138240",
+    "112291_57600",
+    "091287_188160"
+  ],
+  "note": "One-epoch integration smoke only; frozen AudioSet backbones and capped subset are not the paper's full training protocol."
+}

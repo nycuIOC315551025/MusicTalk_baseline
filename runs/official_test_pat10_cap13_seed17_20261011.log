@@ -1,0 +1,79 @@
+/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/vendor/python_deps/sacred/dependencies.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+LOADING_PASST
+LOADING_PANNS
+PANNS_MODEL_INIT_START
+PANNS_MODEL_INIT_DONE
+PANNS_CHECKPOINT_LOAD_START
+PANNS_CHECKPOINT_LOAD_DONE
+/home/user/miniforge3/envs/musictalk-py312/lib/python3.12/site-packages/torch/functional.py:681: UserWarning: stft with return_complex=False is deprecated. In a future pytorch release, stft will return complex tensors for all inputs, and return_complex=False will raise an error.
+Note: you can still call torch.view_as_real on the complex output to recover the old return format. (Triggered internally at /pytorch/aten/src/ATen/native/SpectralOps.cpp:874.)
+  return _VF.stft(  # type: ignore[attr-defined]
+/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/vendor/PaSST/models/preprocess.py:77: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/vendor/PaSST/models/passt.py:321: UserWarning: Input image size (128*1000) doesn't match model (128*998).
+  warnings.warn(f"Input image size ({H}*{W}) doesn't match model ({self.img_size[0]}*{self.img_size[1]}).")
+TEST_FORWARD batch=100/636 elapsed=35.0s
+TEST_FORWARD batch=200/636 elapsed=69.8s
+TEST_FORWARD batch=300/636 elapsed=104.9s
+TEST_FORWARD batch=400/636 elapsed=139.8s
+TEST_FORWARD batch=500/636 elapsed=174.7s
+TEST_FORWARD batch=600/636 elapsed=209.7s
+TEST_FORWARD batch=636/636 elapsed=222.2s
+{
+  "status": "completed",
+  "dataset": "OpenMIC-2018 official split01_test, raw OGG audio",
+  "official_test_evaluated": true,
+  "test_samples": 5085,
+  "test_observed_labels": 10522,
+  "test_scored_classes_roc_auc_and_ap": 20,
+  "test_macro_roc_auc": 0.9154889984677738,
+  "test_macro_average_precision": 0.8512674644000887,
+  "test_macro_f1_at_validation_roc_nearest_thresholds": 0.7975967894590259,
+  "test_f1_scored_classes": 20,
+  "test_f1_per_class_at_validation_thresholds": [
+    0.6323529411764706,
+    0.7003367003367004,
+    0.6710963455149501,
+    0.8227571115973742,
+    0.5503685503685504,
+    0.9530201342281879,
+    0.9328493647912885,
+    0.6572769953051644,
+    0.9698046181172292,
+    0.8197530864197531,
+    0.6567164179104478,
+    0.669260700389105,
+    0.9323583180987203,
+    0.886326194398682,
+    0.9341085271317829,
+    0.7692307692307693,
+    0.8454258675078864,
+    0.7009803921568627,
+    0.9062087186261559,
+    0.9417040358744395
+  ],
+  "f1_threshold_source": "Per-class ROC-nearest thresholds selected on the checkpoint's validation split and saved in the training checkpoint.",
+  "test_thresholds_tuned_on_test": false,
+  "official_test_evaluated_before_for_another_checkpoint": true,
+  "prior_official_test_checkpoint": "C:\\TATQAQOAO\\0_ntsc_project\\MusicTalk\\runs\\official_split_one_epoch\\checkpoint_heads.pt",
+  "validation_macro_roc_auc_reference": 0.9236111658002301,
+  "validation_macro_average_precision_reference": 0.8660408232159569,
+  "checkpoint": "/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/runs/paper_aligned_openmic_pat10_cap13_seed17_20261011/checkpoint_best.pt",
+  "checkpoint_sha256": "a6500994a4cdf4b44772ad10e4b83eb204e00c232fc2eee6b0b5b7d73f41629c",
+  "seed": 17,
+  "training_epochs": 13,
+  "training_samples": 12677,
+  "validation_samples": 2238,
+  "batch_size": 8,
+  "device": "NVIDIA GeForce RTX 3090",
+  "inference_seconds": 222.1609708699998,
+  "examples_per_second": 22.88880886722245,
+  "passt_checkpoint_missing_head_keys": [
+    "head.1.bias",
+    "head.1.weight",
+    "head_dist.bias",
+    "head_dist.weight"
+  ],
+  "note": "Test was evaluated once for a different one-epoch checkpoint earlier in this project. This result uses validation-selected thresholds and must be reported with that prior test exposure disclosed; it is not an independent untouched final test."
+}

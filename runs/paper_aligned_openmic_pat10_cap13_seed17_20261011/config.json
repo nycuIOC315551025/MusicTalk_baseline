@@ -1,0 +1,50 @@
+{
+  "paper": "Lin, Cheng, Chiu, IEEE OJCS 2024, DOI 10.1109/OJCS.2024.3476416",
+  "dataset_dir": "/home/user/TATQAQOAO/0_ntsc_project/0_dataset/processed/openmic-2018",
+  "weights_dir": "/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/weights",
+  "output_dir": "/home/user/TATQAQOAO/0_ntsc_project/MusicTalk/runs/paper_aligned_openmic_pat10_cap13_seed17_20261011",
+  "seed": 17,
+  "train_samples": 12677,
+  "validation_samples": 2238,
+  "official_test_evaluated": false,
+  "batch_size": 4,
+  "train_batch_policy": "shuffle; merge a trailing singleton into the preceding batch to avoid a 1-sample PANNs BatchNorm batch",
+  "max_epochs": 13,
+  "early_stopping_patience": 10,
+  "backbones_frozen": false,
+  "backbone_learning_rate": 1e-05,
+  "head_learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "bcp_frequency_patches": 12,
+  "bcp_dropped_patches": 3,
+  "audio_seconds": 10,
+  "sample_rate_hz": 32000,
+  "batch_norm_behavior": "updated during trainable-backbone training; fixed only with --freeze-backbones",
+  "paper_specified": [
+    "OpenMIC split counts",
+    "15% training holdout for validation",
+    "inverse-frequency weighted BCE",
+    "mask unknown labels",
+    "early stopping patience 10",
+    "save lowest validation-loss setting"
+  ],
+  "reimplementation_choices_not_fully_specified_by_paper": [
+    "seed",
+    "optimizer AdamW",
+    "learning rates",
+    "weight decay",
+    "batch size",
+    "ten-second input selection",
+    "PaSST/PANNs initialization checkpoint variants",
+    "exact validation sample IDs"
+  ],
+  "torch_version": "2.10.0+cu128",
+  "cuda_version": "12.8",
+  "device": "NVIDIA GeForce RTX 3090",
+  "passt_missing_openmic_head_keys": [
+    "head.1.bias",
+    "head.1.weight",
+    "head_dist.bias",
+    "head_dist.weight"
+  ]
+}

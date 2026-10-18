@@ -1,0 +1,41 @@
+{
+  "status": "epoch_cap_reached",
+  "stop_reason": "epoch_cap_reached",
+  "best_epoch": 3,
+  "best_validation_loss_weighted_masked_bce": 0.36715225925953054,
+  "epochs_run": 3,
+  "requested_epoch_cap": 3,
+  "early_stopping_patience": 10,
+  "backbones_frozen": false,
+  "official_test_evaluated": false,
+  "checkpoint": "C:\\TATQAQOAO\\0_ntsc_project\\MusicTalk\\runs\\paper_aligned_openmic_finetune_3ep_seed17_20261011\\checkpoint_best.pt",
+  "best_validation_metrics": {
+    "validation_macro_roc_auc": 0.9230483250760606,
+    "validation_macro_average_precision": 0.8689912481454721,
+    "validation_macro_f1_roc_nearest": 0.825708594908751,
+    "validation_scored_classes": 20,
+    "validation_class_thresholds_roc_nearest": [
+      0.4948553740978241,
+      0.5945003032684326,
+      0.5029305815696716,
+      0.4394208788871765,
+      0.5521904826164246,
+      0.49558284878730774,
+      0.7144771218299866,
+      0.4355963468551636,
+      0.3606865406036377,
+      0.48487740755081177,
+      0.5387134552001953,
+      0.5446112751960754,
+      0.46609726548194885,
+      0.750041663646698,
+      0.7207738757133484,
+      0.6030939817428589,
+      0.5848532915115356,
+      0.5671654939651489,
+      0.50547856092453,
+      0.5766696929931641
+    ]
+  },
+  "note": "Paper-guided OpenMIC run. If status is epoch_cap_reached, this is a capped development reproduction, not a patience-converged paper-length run."
+}

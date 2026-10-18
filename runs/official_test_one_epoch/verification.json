@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "official_test_samples": 5085,
+  "unique_test_ids": 5085,
+  "prediction_ids_match_official_test_order": true,
+  "train_test_id_overlap": 0,
+  "validation_test_id_overlap": 0,
+  "predictions_shape": [
+    5085,
+    20
+  ],
+  "targets_shape": [
+    5085,
+    20
+  ],
+  "masks_shape": [
+    5085,
+    20
+  ],
+  "probabilities_finite": true,
+  "probability_min": 0.11566047370433807,
+  "probability_max": 0.8873597383499146,
+  "observed_labels": 10522,
+  "test_thresholds_tuned_on_test": false,
+  "test_macro_roc_auc": 0.9090690630707201,
+  "test_macro_average_precision": 0.8381082250319455,
+  "test_macro_f1_at_validation_thresholds": 0.7943563123241403,
+  "checkpoint_sha256": "521f08d3e7f3a03fbf6c6a6c3b4cd43f8bb63b777e8156f3f27a6dc570d0142d",
+  "metrics_sha256": "4282d69c195039be0a5d21b880a893c34ca7b8b151b4f80e859f801a9bc034fa",
+  "predictions_sha256": "248823ea7aff2f024aa4d9d62bf703870a2a6270f4082991545e5822682e8d6c",
+  "independent_metric_recomputed": true,
+  "independent_metric_max_abs_delta": 0.0,
+  "independent_metric_check_sha256": "b8534a60c2bb353d6c01258fd3ebdecdc80f3e41ca48898f8bacf967b77cc45d"
+}
