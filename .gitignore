@@ -2,6 +2,7 @@
 # object limit is unsuitable for these multi-hundred-megabyte files.
 weights/*.pt
 weights/*.pth
+weights/dist/*.7z
 runs/**/*.pt
 runs/**/*.pth
 

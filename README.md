@@ -22,6 +22,40 @@ Our OpenMIC run reproduces the paper's model direction and gets an almost identi
 
 The reproduction uses the OpenMIC-2018 20-class task and the paper-guided PaSST/BCP-WP + ResNet38 ensemble. The checkpoint shown here is selected on validation; its metrics are validation metrics, and this branch did **not** evaluate the official test split. The paper's Table 1 lists the MusicTalk/OpenMIC scores as mAP 0.867, AUC 0.973, and macro-F1 0.842, but the article also describes Table 1 as a related-work summary while Section VI points its OpenMIC evaluation to Table 1. Because the table's role and evaluation protocol are not fully clear, treat this as a close mAP match and a partial reproduction—not an exact, matched-protocol reproduction of all three scores. The full run settings and limitations are recorded below and in [`MusicTalk_OpenMIC_重現紀錄.md`](MusicTalk_OpenMIC_重現紀錄.md).
 
+### Validation history
+
+The chart shows the recorded validation metrics for the epoch-5 best checkpoint and the follow-up branch through epoch 30. Epochs 6–30 fine-tuned from the epoch-5 checkpoint with a newly initialized optimizer and reset RNG; they are not an exact continuation. The official test split was not evaluated in this branch.
+
+![OpenMIC validation history through epoch 30](docs/figures/openmic_validation_history.png)
+
+### Repository layout
+
+```text
+MusicTalk/
+├── bcp_wp.py                         # Brightness-weighted patch sampling
+├── train_paper_aligned.py            # Full-split paper-guided training
+├── train_dual_branch_smoke.py        # Bounded integration/pilot training
+├── evaluate_openmic_test.py          # Official split evaluation script
+├── MusicTalk_OpenMIC_重現紀錄.md      # Detailed protocol and reproduction notes
+├── docs/
+│   └── figures/
+│       └── openmic_validation_history.png
+├── vendor/
+│   ├── PaSST/                        # Pinned upstream source snapshot
+│   ├── PANNs/                        # Pinned upstream source snapshot
+│   └── README.md                     # Source and compatibility notes
+├── weights/
+│   └── README.md                     # Pretrained-weight provenance
+└── runs/
+    └── <OpenMIC fine-tuning run>/
+        ├── config.json
+        ├── history.json
+        ├── metrics.json
+        └── split_ids.json
+```
+
+Datasets and large model/checkpoint files are kept outside normal Git history. The run directory contains configuration, split IDs, metrics, and training history; checkpoint archives are distributed separately.
+
 ## Reproduction gates
 
 1. Verify the OpenMIC archive checksum and inspect its supplied splits and labels. **Complete.**
