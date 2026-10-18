@@ -58,7 +58,14 @@ Datasets and large model/checkpoint files are kept outside normal Git history. T
 
 ### Downloadable weights
 
-The [GitHub Release](https://github.com/nycuIOC315551025/MusicTalk_baseline/releases/tag/fp16-weights) contains three 7-Zip archives: checkpoints for epochs 5/10/15, checkpoints for epochs 20/25/30, and the best checkpoint plus the two pretrained backbones. To reduce download size, floating-point tensors in these archives were converted from FP32 to FP16 before maximum LZMA2 compression. This is lossy quantization: the archived files are load-checked, but their validation metrics have **not** been recomputed. The mAP/AUC/F1 values above refer to the original FP32 run, not the quantized copies. Each archive includes a quantization manifest with source and output checksums. Outer archive hashes are in [`weights/dist/SHA256SUMS.txt`](weights/dist/SHA256SUMS.txt).
+The archives are available from the [`fp16-weights` GitHub Release](https://github.com/nycuIOC315551025/MusicTalk_baseline/releases/tag/fp16-weights). Direct download paths:
+
+- [`musictalk_FP16_best_and_pretrained_weights.7z`](https://github.com/nycuIOC315551025/MusicTalk_baseline/releases/download/fp16-weights/musictalk_FP16_best_and_pretrained_weights.7z) — best checkpoint and the two pretrained backbones.
+- [`musictalk_FP16_checkpoints_epoch05-15.7z`](https://github.com/nycuIOC315551025/MusicTalk_baseline/releases/download/fp16-weights/musictalk_FP16_checkpoints_epoch05-15.7z) — checkpoints for epochs 5, 10, and 15.
+- [`musictalk_FP16_checkpoints_epoch20-30.7z`](https://github.com/nycuIOC315551025/MusicTalk_baseline/releases/download/fp16-weights/musictalk_FP16_checkpoints_epoch20-30.7z) — checkpoints for epochs 20, 25, and 30.
+- [`SHA256SUMS.txt`](https://github.com/nycuIOC315551025/MusicTalk_baseline/releases/download/fp16-weights/SHA256SUMS.txt) — checksums for the downloadable release files; a copy is also kept at [`weights/dist/SHA256SUMS.txt`](weights/dist/SHA256SUMS.txt).
+
+To reduce download size, floating-point tensors in the archives were converted from FP32 to FP16 before maximum LZMA2 compression. This is lossy quantization: the archived files are load-checked, but their validation metrics have **not** been recomputed. The mAP/AUC/F1 values above refer to the original FP32 run, not the quantized copies. Each archive includes a quantization manifest with source and output checksums.
 
 ## Reproduction gates
 
